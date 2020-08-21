@@ -191,6 +191,7 @@ namespace SnapshotReciever
                     {
                         treeViewDevices.BeginUpdate();
                         treeNodeDevice.Text = formDeviceAdd.currentDevice.Name;
+                        treeNodeDevice.Tag = formDeviceAdd.currentDevice;
 
                         treeNodeDevice.Nodes.Clear();
                         foreach(Camera cam in formDeviceAdd.currentDevice.Cameras)
