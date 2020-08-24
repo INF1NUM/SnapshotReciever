@@ -24,6 +24,9 @@ namespace SnapshotReciever
             else
                 settings = new Settings(settingsFilePath);
             this.Text += " - " + GetVersion();
+#if DEBUG
+            this.Text += " - DEVELOPER BUILD";
+#endif
         }
 
         private int wheelDelta = SystemInformation.MouseWheelScrollDelta;

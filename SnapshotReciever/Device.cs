@@ -62,6 +62,8 @@ namespace SnapshotReciever
 
         public void GetInfo()
         {
+            if (_bind == null)
+                InitializeBind();
             using (var device = new DeviceClient(_bind, new EndpointAddress("http://" + this.Address + "/onvif/device_service")))
             {
                 device.ClientCredentials.HttpDigest.ClientCredential.UserName = this.Username;

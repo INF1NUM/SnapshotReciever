@@ -46,6 +46,7 @@
             this.toolStripButtonRowDown = new System.Windows.Forms.ToolStripButton();
             this.groupBoxDeviceSettings = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,10 +55,9 @@
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
+            this.textBoxModel = new System.Windows.Forms.TextBox();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonAddDevice = new System.Windows.Forms.Button();
-            this.textBoxModel = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             this.groupBoxCameraList.SuspendLayout();
             this.panelCameras.SuspendLayout();
@@ -260,6 +260,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(226, 139);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Location = new System.Drawing.Point(3, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Модель";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -336,6 +346,15 @@
             this.labelName.Text = "Название";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // textBoxModel
+            // 
+            this.textBoxModel.Location = new System.Drawing.Point(79, 115);
+            this.textBoxModel.Name = "textBoxModel";
+            this.textBoxModel.ReadOnly = true;
+            this.textBoxModel.Size = new System.Drawing.Size(144, 22);
+            this.textBoxModel.TabIndex = 8;
+            this.textBoxModel.WordWrap = false;
+            // 
             // buttonCancel
             // 
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -358,25 +377,6 @@
             this.buttonAddDevice.Text = "Добавить";
             this.buttonAddDevice.UseVisualStyleBackColor = true;
             this.buttonAddDevice.Click += new System.EventHandler(this.buttonAddDevice_Click);
-            // 
-            // textBoxModel
-            // 
-            this.textBoxModel.Location = new System.Drawing.Point(79, 115);
-            this.textBoxModel.Name = "textBoxModel";
-            this.textBoxModel.ReadOnly = true;
-            this.textBoxModel.Size = new System.Drawing.Size(144, 22);
-            this.textBoxModel.TabIndex = 8;
-            this.textBoxModel.WordWrap = false;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(3, 112);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Модель";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FormDevice
             // 

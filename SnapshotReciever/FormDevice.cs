@@ -98,7 +98,8 @@ namespace SnapshotReciever
             this.currentDevice = new Device(textBoxName.Text, textBoxAddress.Text, _cryptoString);
             this.currentDevice.Username = textBoxUserName.Text;
             this.currentDevice.Password = textBoxPassword.Text;
-            this.currentDevice.GetInfo();
+            if(string.IsNullOrEmpty(currentDevice.Model))
+                this.currentDevice.GetInfo();
             textBoxModel.Text = currentDevice.Model;
         }
 
@@ -208,6 +209,18 @@ namespace SnapshotReciever
         {
             if (!_isNewDevice)
             {
+                if (String.IsNullOrEmpty(currentDevice.Model))
+                {
+                    try
+                    {
+                        currentDevice.GetInfo();
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Ошибка получения данных", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+
                 this.Text = "Изменение устройства";
                 buttonAddDevice.Text = "Применить";
                 textBoxAddress.Enabled = false;
@@ -219,9 +232,7 @@ namespace SnapshotReciever
                 textBoxModel.Text = currentDevice.Model;
 
                 foreach (Camera cam in currentDevice.Cameras)
-                {
                     dataGridViewCameraList.Rows.Add(cam.Name, cam.PortNumber);
-                }
             }
         }
 
