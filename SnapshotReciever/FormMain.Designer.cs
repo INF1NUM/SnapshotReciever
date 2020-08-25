@@ -201,12 +201,11 @@
             // toolStripButtonGetSnapshot
             // 
             this.toolStripButtonGetSnapshot.AutoSize = false;
-            this.toolStripButtonGetSnapshot.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonGetSnapshot.Image = global::SnapshotReciever.Properties.Resources.photo24p;
             this.toolStripButtonGetSnapshot.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButtonGetSnapshot.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonGetSnapshot.Name = "toolStripButtonGetSnapshot";
-            this.toolStripButtonGetSnapshot.Size = new System.Drawing.Size(30, 28);
+            this.toolStripButtonGetSnapshot.Size = new System.Drawing.Size(140, 28);
             this.toolStripButtonGetSnapshot.Text = "Получить снимок";
             this.toolStripButtonGetSnapshot.Click += new System.EventHandler(this.toolStripButtonGetSnapshot_Click);
             // 
@@ -218,12 +217,11 @@
             // toolStripButtonSaveImage
             // 
             this.toolStripButtonSaveImage.AutoSize = false;
-            this.toolStripButtonSaveImage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonSaveImage.Image = global::SnapshotReciever.Properties.Resources.save24p;
             this.toolStripButtonSaveImage.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButtonSaveImage.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonSaveImage.Name = "toolStripButtonSaveImage";
-            this.toolStripButtonSaveImage.Size = new System.Drawing.Size(30, 28);
+            this.toolStripButtonSaveImage.Size = new System.Drawing.Size(140, 28);
             this.toolStripButtonSaveImage.Text = "Сохранить снимок";
             this.toolStripButtonSaveImage.Click += new System.EventHandler(this.toolStripButtonSaveImage_Click);
             // 
